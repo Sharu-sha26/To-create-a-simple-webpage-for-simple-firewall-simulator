@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firewall Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Firewall Simulator</h1>
+        
+        <div class="input-section">
+            <h2>Add Firewall Rule</h2>
+            <input type="text" id="ruleInput" placeholder="Enter rule (e.g., allow 192.168.1.1)">
+            <button id="addRuleBtn">Add Rule</button>
+        </div>
+
+        <div class="check-section">
+            <h2>Check Packet</h2>
+            <input type="text" id="packetInput" placeholder="Enter packet IP">
+            <button id="checkPacketBtn">Check Packet</button>
+            <p id="resultMessage"></p>
+        </div>
+
+        <div class="rules-section">
+            <h2>Current Rules</h2>
+            <ul id="rulesList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
